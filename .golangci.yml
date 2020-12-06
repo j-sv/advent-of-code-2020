@@ -33,10 +33,15 @@ linters:
     - bodyclose
     - deadcode
     - depguard
-    - dogsled
+    # - dogsled
     - dupl
     - errcheck
+    - errorlint
+    - exhaustive
+    - exhaustivestruct
+    - exportloopref
     - funlen
+    - gci
     - gochecknoglobals
     - gochecknoinits
     - gocognit
@@ -47,6 +52,8 @@ linters:
     - godox
     - goerr113
     - gofmt
+    - gofumpt
+    - goheader
     - goimports
     # - golint
     # - gomnd
@@ -62,18 +69,24 @@ linters:
     - misspell
     - nakedret
     - nestif
+    - nlreturn
+    - noctx
     - nolintlint
+    - paralleltest
     - prealloc
     - rowserrcheck
     - scopelint
     - staticcheck
     - structcheck
     - stylecheck
+    - sqlclosecheck
     - testpackage
+    - tparallel
     - typecheck
     - unconvert
     - unparam
     - unused
     - varcheck
     - whitespace
+    - wrapcheck
     - wsl

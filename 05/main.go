@@ -79,6 +79,7 @@ func main() {
 	for i := 1; i < len(seatIDs); i++ {
 		if seatIDs[i]-seatIDs[i-1] > 1 {
 			fmt.Println(seatIDs[i] - 1) // 711
+
 			break
 		}
 	}
