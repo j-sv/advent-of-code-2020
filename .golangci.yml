@@ -1,0 +1,79 @@
+run:
+  deadline: 5m
+  concurrency: 4
+  skip-files:
+    - _test.go
+  skip-dirs: []
+
+linters-settings:
+  errcheck:
+    check-blank: true
+  govet:
+    check-shadowing: true
+  goimports:
+    local-prefixes: github.com/j-sv
+  gocyclo:
+    min-complexity: 20
+  gocognit:
+    min-complexity: 20
+  maligned:
+    suggest-new: true
+  dupl:
+    threshold: 150
+  lll:
+    max-line-length: 140
+
+issues:
+  exclude-rules: []
+
+linters:
+  disable-all: true
+  enable:
+    - asciicheck
+    - bodyclose
+    - deadcode
+    - depguard
+    - dogsled
+    - dupl
+    - errcheck
+    - funlen
+    - gochecknoglobals
+    - gochecknoinits
+    - gocognit
+    - goconst
+    - gocritic
+    - gocyclo
+    - godot
+    - godox
+    - goerr113
+    - gofmt
+    - goimports
+    # - golint
+    # - gomnd
+    - gomodguard
+    - goprintffuncname
+    - gosec
+    - gosimple
+    - govet
+    - ineffassign
+    - interfacer
+    - lll
+    - maligned
+    - misspell
+    - nakedret
+    - nestif
+    - nolintlint
+    - prealloc
+    - rowserrcheck
+    - scopelint
+    - staticcheck
+    - structcheck
+    - stylecheck
+    - testpackage
+    - typecheck
+    - unconvert
+    - unparam
+    - unused
+    - varcheck
+    - whitespace
+    - wsl
